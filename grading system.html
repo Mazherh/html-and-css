@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    
+    <p>Enter your Marks.</p>
+
+    <input id="myInput" type="text">
+
+    <button onclick="myFunction()">Click Here</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var marks = document.getElementById("myInput").value;
+            var Grade;
+
+            if (marks>=90) {
+                Grade= 'Your Grade is A';
+            }
+             else if (marks>= 80) {
+                Grade = 'Your Grade is B';
+            }
+             else if (marks>= 70) {
+                Grade = 'Your Grade is C';
+            }
+             else if (marks>= 60) {
+                Grade = 'Your Grade is D';
+            }
+             else {
+                Grade = 'You fail your exam';
+            }
+
+            document.getElementById("demo").innerHTML = Grade;
+        }
+    </script>
+
+</body>
+</html>
